@@ -1,0 +1,36 @@
+<app-nabvar></app-nabvar>
+<div>
+    <div class="container col-5">
+      <h1><strong>Editar Candidato</strong></h1>
+      <form (ngSubmit)="editarCandidato()">
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="form-outline">
+              <label class="form-label" >Nombre</label>
+              <input type="text"  [(ngModel)]="candidatoData.nombre" [ngModelOptions]="{standalone: true}" class="form-control" required/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-outline">
+              <label class="form-label" >Telefono</label>
+              <input type="number" [(ngModel)]="candidatoData.telefono" [ngModelOptions]="{standalone: true}" class="form-control" required/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-outline ">
+              <label class="form-label" >Cedula</label>
+              <input type="number"  [(ngModel)]="candidatoData.cedula" [ngModelOptions]="{standalone: true}"class="form-control" required/>
+          </div>
+          </div>
+            <div class="col-md-6">
+              <div class="form-outline ">
+                <label class="form-label">Cargo</label>
+                <input type="text"  [(ngModel)]="candidatoData.cargo" [ngModelOptions]="{standalone: true}" class="form-control" required/>
+              </div>
+          </div>
+        
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mb-4">Guardar</button>
+      </form>
+    </div>
+</div>

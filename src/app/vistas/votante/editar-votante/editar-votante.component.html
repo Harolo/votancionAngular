@@ -1,0 +1,48 @@
+<app-nabvar></app-nabvar>
+<div>
+    <div class="container col-5">
+      <h1><strong>Editar Candidato</strong></h1>
+      <form (ngSubmit)="editarCandidato()">
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="form-outline">
+              <label class="form-label" >Nombre</label>
+              <input type="text"  [(ngModel)]="votanteData.nombre" [ngModelOptions]="{standalone: true}" class="form-control" required/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-outline">
+              <label class="form-label" >Telefono</label>
+              <input type="number" [(ngModel)]="votanteData.telefono" [ngModelOptions]="{standalone: true}" class="form-control" required/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-outline ">
+              <label class="form-label" >Cedula</label>
+              <input type="number"  [(ngModel)]="votanteData.cedula" [ngModelOptions]="{standalone: true}"class="form-control" required/>
+          </div>
+          </div>
+            <div class="col-md-6">
+              <div class="form-outline ">
+                <label class="form-label">Cargo</label>
+                <input type="text"  [(ngModel)]="votanteData.direccion" [ngModelOptions]="{standalone: true}" class="form-control" required/>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-outline ">
+              <label class="form-label">Ciudad</label>
+              <input type="text"  [(ngModel)]="votanteData.ciudad" [ngModelOptions]="{standalone: true}" class="form-control" required/>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-outline ">
+            <label class="form-label">Departamento</label>
+            <input type="text"  [(ngModel)]="votanteData.departamento" [ngModelOptions]="{standalone: true}" class="form-control" required/>
+          </div>
+      </div>
+        
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mb-4">Guardar</button>
+      </form>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<app-nabvar></app-nabvar>
+<div class="container">
+    <h1><strong>Se muestran las categorias disponibles en la cual puede realizar el voto</strong></h1>
+
+</div>
+    <div class="categorias">
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/votarCandidato','alcaldia']">Votar por alcaldia</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/votarCandidato','consejo']">Votar por consejo</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/votarCandidato','gobernacion']">Votar por gobernacion</button>
+        </div>
+</div>
